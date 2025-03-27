@@ -1,0 +1,147 @@
+/* إعدادات عامة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: center;
+    background-color: #000000;
+}
+
+/* الشريط العلوي */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* القسم الرئيسي */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    min-height: 80vh;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e64a19;
+}
+
+/* أقسام أخرى */
+section {
+    padding: 60px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* الخدمات */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+}
+
+/* قسم الاتصال */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact button:hover {
+    background: #555;
+}
+
+/* التذييل */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
