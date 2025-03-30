@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اهلا بك في اول موقع احترافي خاص بي</title>
+    <title>موقعي الاحترافي</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">تجربه الاولى</div>
+        <div class="logo">موقعي</div>
         <nav>
             <ul>
                 <li><a href="#home">الرئيسية</a></li>
@@ -21,8 +21,8 @@
     </header>
 
     <section id="home" class="hero">
-        <h1>مرحبًا بك في اول موقع احترافي خاص بي</h1>
-        <p>نحن لا نقدم شيئ</p>
+        <h1>مرحبًا بك في موقعي الاحترافي</h1>
+        <p>نحن نقدم أفضل الحلول لتطوير المواقع</p>
         <a href="#services" class="btn">تعرف على خدماتنا</a>
     </section>
 
@@ -53,13 +53,30 @@
             <input type="text" placeholder="الاسم" required>
             <input type="email" placeholder="البريد الإلكتروني" required>
             <textarea placeholder="رسالتك" required></textarea>
-            <button type="submit">إرسال</button>
+            <button type="submit" class="btn">إرسال</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2025 جميع الحقوق محفوظة | iron</p>
+        <p>© 2025 جميع الحقوق محفوظة | موقعي</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let sections = document.querySelectorAll("section");
+            function revealSections() {
+                sections.forEach(section => {
+                    let sectionTop = section.getBoundingClientRect().top;
+                    let windowHeight = window.innerHeight;
+                    if (sectionTop < windowHeight - 100) {
+                        section.classList.add("show");
+                    }
+                });
+            }
+            window.addEventListener("scroll", revealSections);
+            revealSections(); // لضمان أن الأقسام الأولى تظهر فورًا
+        });
+    </script>
 
 </body>
 </html>
